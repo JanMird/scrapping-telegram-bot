@@ -9,7 +9,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
-    bot.send_message(m.chat.id, 'Этот бот создан для быстрого поиска концертов выших любимых исполнителей. Всё, что требуется сделать, - это ввести исполнителя.')
+    bot.send_message(m.chat.id, 'Этот бот создан для быстрого поиска концертов твоих любимых исполнителей. Всё, что требуется сделать, - это ввести исполнителя.')
 
 def resultstring(concert):
     parameters = 'Название : ' + concert['name'] + '\n'
