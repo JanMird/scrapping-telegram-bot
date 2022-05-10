@@ -1,6 +1,5 @@
 import telebot
 from scrape import search_for_concerts
-import os
 import sys
 
 TOKEN = sys.argv[1]

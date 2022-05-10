@@ -3,7 +3,7 @@
 INTRODUCTION
 ------------
 
-
+This telegram-bot searches for upcoming concerts of given performers and provides name, date, place, range of prices and url where to buy tickets. It is starting by bash script. Script recieves token for a bot, creates venv, downloads all required libraries and runs bot.
  
 REQUIREMENTS
 ------------
@@ -43,13 +43,14 @@ Enter a directory in wich to download the bot script (`cd ./mydir`), install as 
 LAUNCH
 ------
  
- Enter directory with README. Now you are ready to <s>work as frontend</s> start bot. Use following command : `sh script.sh` ...
+ Enter directory with README. Now you are ready to <s>work as frontend</s> start bot. Use following command : `sh script.sh` ... After that you need to enter your ubuntu password.
  
  ![IMAGE0](images/greatfrontend.jpg)
  
  **'you are in the same directory as README.md'**
    
      sh script.sh <your token>
+     <your password>
  
 TROUBLESHOOTING
 ---------------
