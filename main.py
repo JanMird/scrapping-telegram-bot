@@ -1,7 +1,11 @@
 import telebot
 from scrape import search_for_concerts
+import os
+import sys
 
-bot = telebot.TeleBot('5340262169:AAFiMaVB1Vgh3Lq-insSSh-MOnGsImbjRJ8')
+TOKEN = sys.argv[1]
+
+bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
