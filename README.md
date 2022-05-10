@@ -36,7 +36,7 @@ Enter a directory in wich to download the bot script (`cd ./mydir`), install as 
    
      sudo apt-get install python3
    
-     git clone https://github.com/JanMird/pythonreview1.git
+     git clone https://github.com/JanMird/pythonreview2.git
    
      >git checkout dev (optional)
  
