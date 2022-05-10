@@ -43,7 +43,7 @@ Enter a directory in wich to download the bot script (`cd ./mydir`), install as 
 LAUNCH
 ------
  
- Enter directory with README. Now you are ready to <s>work as frontend</s> start bot. Use following command : sh script.sh <your token>
+ Enter directory with README. Now you are ready to <s>work as frontend</s> start bot. Use following command : `sh script.sh` ...
  
  ![IMAGE0](images/greatfrontend.jpg)
  
@@ -72,10 +72,10 @@ FAQ
 EXAMPLES
 --------
 
-![IMAGE1](examples/1.jpg)
-![IMAGE2](examples/2.jpg)
-![IMAGE3](examples/3.jpg)
-![IMAGE4](examples/4.jpg)
-![IMAGE5](examples/5.jpg)
-![IMAGE6](examples/6.jpg)
+![IMAGE1](images/1.jpg)
+![IMAGE2](images/2.jpg)
+![IMAGE3](images/3.jpg)
+![IMAGE4](images/4.jpg)
+![IMAGE5](images/5.jpg)
+![IMAGE6](images/6.jpg)
 

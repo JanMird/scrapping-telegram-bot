@@ -9,9 +9,23 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
+    '''
+    Sends messege on (start).
+            Parameters:
+                    None
+            Returns:
+                    None
+    '''
     bot.send_message(m.chat.id, 'Этот бот создан для быстрого поиска концертов твоих любимых исполнителей. Всё, что требуется сделать, - это ввести исполнителя.')
 
 def resultstring(concert):
+    '''
+    Converts concert information from dict to string
+            Parameters:
+                    concert (dict) : input information
+            Returns:
+                    Information as string for pasting
+    '''
     parameters = 'Название : ' + concert['name'] + '\n'
     parameters += 'Когда : ' + concert['date'] + '\n'
     parameters += 'Место : ' + concert['place'] + '\n'
@@ -22,6 +36,13 @@ def resultstring(concert):
 
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
+    '''
+    Reacts on input text
+            Parameters:
+                    message (string) : input text
+            Returns:
+                    None
+    '''
     concerts = search_for_concerts(message.text)
     if len(concerts) == 0:
         bot.send_message(message.chat.id, 'Не могу увидеть совпадения, концертов нет. Проверь написание')
@@ -36,3 +57,4 @@ def handle_text(message):
 
 
 bot.polling(none_stop=True, interval=0)
+
